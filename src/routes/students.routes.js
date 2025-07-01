@@ -7,9 +7,9 @@ const {isAuthenticated} = require('../middlewares/isAuth');
 router.get('/get-student', getAllStudents);
 router.get('/search-students', searchStudent);
 router.get('/count-students', countStudents);
-router.post('/add-student',isAuthenticated, addStudent);
-router.put('/update-students/:studentId',isAuthenticated, updateStudents);
-router.delete('/delete-student/:studentId',isAuthenticated, deleteStudent);
+router.post('/add-student', addStudent);
+router.put('/update-students/:studentId', updateStudents);
+router.delete('/delete-student/:studentId', deleteStudent);
 
 
 module.exports = router;
